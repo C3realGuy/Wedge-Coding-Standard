@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<ruleset name="Wedge">
+ <description>Coding standard for the Wedge forum software</description>
+
+ <file>./core/</file>
+ <file>./install/</file>
+ <file>./index.php</file>
+ <file>./subscriptions.php</file>
+
+ <arg name="extensions" value="php"/>
+
+ <!-- RULES -->
+
+ <!--
+  Functions.MultilineFunctionDeclaration.BraceOnSameLine
+
+  Opening brace has to be on the next line if it's not a single line function.
+ -->
+ <rule ref="Wedge.Functions.MultilineFunctionDeclaration.BraceOnSameLine"/>
+
+ <!--
+   Commenting.WhitespaceAfterSingleLineComment
+
+   After a // or # comment there always has to be a whitespace.
+ -->
+ <rule ref="Wedge.Commenting.WhitespaceAfterSingleLineComment"/>
+
+ <!--
+   WhiteSpace.DisallowSpaceIndent
+
+   Tabs must be used to indent lines, spaces are not allowed.
+ -->
+ <rule ref="Generic.WhiteSpace.DisallowSpaceIndent"/>
+
+ <!--
+   Strings.ConcatenationSpacing
+
+   Concat operator must be surrounded by a single space
+ -->
+ <rule ref="Squiz.Strings.ConcatenationSpacing">
+     <properties>
+         <property name="spacing" value="1" />
+     </properties>
+ </rule>
+
+</ruleset>

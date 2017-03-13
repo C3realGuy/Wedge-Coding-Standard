@@ -1,0 +1,19 @@
+{
+    "name": "c3realguy/wedge-coding-standard",
+    "description": "Coding standard for Wedge",
+    "type": "phpcs_standard",
+    "license": "BSD",
+    "authors": [
+        {
+            "name": "C3realGuy",
+            "email": "c3rgey@gmail.com"
+        }
+    ],
+    "require"    : {
+ 	"squizlabs/php_codesniffer": "^2.8.1"
+    },
+    "scripts"    : {
+	"post-install-cmd": "\"vendor/bin/phpcs\" --config-set installed_paths ../../..",
+	"post-update-cmd" : "\"vendor/bin/phpcs\" --config-set installed_paths ../../.."
+    }
+}
