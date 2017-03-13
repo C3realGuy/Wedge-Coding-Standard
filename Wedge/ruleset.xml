@@ -16,14 +16,12 @@
 
   Opening brace has to be on the next line if it's not a single line function.
  -->
- <rule ref="Wedge.Functions.MultilineFunctionDeclaration.BraceOnSameLine"/>
 
  <!--
    Commenting.WhitespaceAfterSingleLineComment
 
    After a // or # comment there always has to be a whitespace.
  -->
- <rule ref="Wedge.Commenting.WhitespaceAfterSingleLineComment"/>
 
  <!--
    WhiteSpace.DisallowSpaceIndent
