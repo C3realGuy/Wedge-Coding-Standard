@@ -51,6 +51,10 @@ class Wedge_Sniffs_Commenting_WhitespaceAfterSingleLineCommentSniff implements P
 		$isDoubleSlash = $tokens[$stackPtr]['content']{0} === '/';
 		$isHash = $tokens[$stackPtr]['content']{0} === '#';
 		$whitespacePos = $isDoubleSlash === true ? 2 : 1;
+		
+		if($tokens[$stackPtr]['length'] <= $whitespacePos)
+			return;
+
 		// var_export([$isDoubleSlash, $isHash, $whitespacePos, $tokens[$stackPtr]['content']{$whitespacePos}]);
 		if ($tokens[$stackPtr]['content']{$whitespacePos} !== ' ') {
 			$error = 'Whitespace after comment required';

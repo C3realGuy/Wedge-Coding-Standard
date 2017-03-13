@@ -22,7 +22,6 @@
 
    After a // or # comment there always has to be a whitespace.
  -->
-
  <!--
    WhiteSpace.DisallowSpaceIndent
 
